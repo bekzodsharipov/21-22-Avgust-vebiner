@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EFEFEF;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+        url("../fonts/Montserrat-Regular.woff") format("woff"),
+        url("../fonts/Montserrat-Regular.ttf") format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/Montserrat-Medium.woff2") format("woff2"),
+         url("../fonts/Montserrat-Medium.woff") format("woff"),
+         url("../fonts/Montserrat-Medium.ttf") format("truetype");
+    font-display: swap;
+  }
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+        url("../fonts/Montserrat-Bold.woff") format("woff"),
+        url("../fonts/Montserrat-Bold.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/BebasNeue-Regular.woff2") format("woff2"),
+        url("../fonts/BebasNeue-Regular.woff") format("woff"),
+        url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+    font-display: swap;
+}
+
+.hero {
+    padding-top: 0;
+    padding-bottom: 35px;
+}
+
+.hero__container {
+    max-width: 406px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 6.6px 0px #00000026;
+    background-color: #FFFFFF;
+    border-radius: 4px 4px 20px 20px;
+    padding: 24px 25px 22px 31px;
+}
+
+.hero__top-min {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero__top-title {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.hero__top_subtitle {
+    font-family: Montserrat, sans-serif;
+
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.hero__text {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+    padding-top: 22px;
+    margin-bottom: 24px;
+}
+
+.hero__text>span {
+    color: #FF0000;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.hero__title {
+    font-family: Bebas Neue, sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 335px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero__title>span {
+    font-family: Bebas Neue, sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #BF5F1E;
+    margin-bottom: 6px;
+}
+
+.hero__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__main-btn {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    padding: 17px 55px;
+    box-shadow: 0px 4px 4px 0px #6662DB inset;
+    background-color: #241EBF;
+    border-radius: 30px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    margin-top: -50px;
+}
+
+.hero__main-btns {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    padding: 17px 55px;
+    box-shadow: 0px 4px 4px 0px #6662DB inset;
+    background-color: #241EBF;
+    border-radius: 30px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+.hero__discount {
+    display: flex;
+    align-items: center;
+    gap: 5.35px;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.hero__discount-title {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.hero__info {
+    border: 1px solid #DADADA;
+    background-color: #F9F9F9;
+    border-radius: 30px;
+    padding: 22px 11px 32px 14px;
+    margin-bottom: 81px;
+}
+
+.hero__info-title {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+    max-width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 17px;
+}
+
+.hero_nav {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    margin-bottom: 6px;
+}
+
+.hero__list {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
