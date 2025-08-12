@@ -4,8 +4,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nodirbek Primqulov</title>
     <link rel="stylesheet" href="./css/main.css">
+
+    <style>
+        /* Reset va asosiy sozlamalar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #EFEFEF;
+        }
+
+        /* Hero qismi */
+        .hero {
+            padding-top: 0;
+            padding-bottom: 35px;
+        }
+
+        .hero__container {
+            max-width: 406px;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+
+        .hero__top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6.6px rgba(0, 0, 0, 0.15);
+            background-color: #fff;
+            border-radius: 4px 4px 20px 20px;
+            padding: 24px 25px 22px 31px;
+        }
+
+        .hero__top-min {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .hero__top-title {
+            font-family: Montserrat, sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .hero__top_subtitle {
+            font-family: Montserrat, sans-serif;
+            font-weight: 800;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .hero__text {
+            font-family: Montserrat, sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            text-align: center;
+            padding-top: 22px;
+            max-width: 335px;
+            margin: 0 auto 24px;
+        }
+
+        .hero__text>span {
+            color: #FF0000;
+        }
+
+        .hero__title {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 700;
+            font-size: 40px;
+            text-align: center;
+            text-transform: uppercase;
+            max-width: 335px;
+            margin: 0 auto;
+        }
+
+        .hero__title>span {
+            color: #BF5F1E;
+        }
+
+        .hero__main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero__main-btn {
+            font-family: Montserrat, sans-serif;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            font-size: 22px;
+            text-transform: uppercase;
+            color: white;
+            padding: 17px 55px;
+            box-shadow: inset 0 4px 4px #6662DB;
+            background-color: #241EBF;
+            border-radius: 30px;
+            margin: -60px 0 16px;
+        }
+
+        .hero__discount {
+            display: flex;
+            align-items: center;
+            gap: 5.35px;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .hero__discount-title {
+            font-family: Montserrat, sans-serif;
+            font-weight: 700;
+            font-size: 30px;
+        }
+
+        /* Modal asosiy ko‘rinish */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal__content {
+            background: #EFEFEF;
+            border-radius: 10px;
+            max-width: 440px;
+            width: 100%;
+            padding: 96px 20px 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .modal__title {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 700;
+            font-size: 48px;
+            text-align: center;
+            margin-bottom: 6px;
+        }
+
+        .modal__text {
+            font-family: Montserrat, sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            text-align: center;
+            max-width: 353px;
+            margin: 0 auto 43px;
+        }
+
+        .modal__inp {
+            font-family: Montserrat, sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            color: #6D6D6D;
+            padding-bottom: 8px;
+            outline: none;
+            background-color: #EFEFEF;
+            border: none;
+            border-bottom: 1px solid #A3A3A3;
+            margin-bottom: 34px;
+            max-width: 288px;
+            width: 100%;
+        }
+
+        .modal__inp-boxs {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 288px;
+            width: 100%;
+            margin: 0 auto 39px;
+        }
+
+        .modal__btn {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 700;
+            font-size: 40px;
+            text-align: center;
+            box-shadow: inset 0 4px 4px #6662DB;
+            background-color: #241EBF;
+            border-radius: 30px;
+            padding: 10px 37px;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,11 +220,12 @@
                 </div>
                 <h3 class="hero__top_subtitle">20:00</h3>
             </div>
-            <p class="hero__text">Nodirbek Primqulov 5 yillik tajribaga ega ustozdan 2 kunlik <span>BEPUL</span> dars</p>
+            <p class="hero__text">Nodirbek Primqulov 5 yillik tajribaga ega ustozdan 2 kunlik <span>BEPUL</span> dars
+            </p>
             <h2 class="hero__title">bIRGINA TELEFON ORQALI <span>1000$ TOPISH SIRLARI</span></h2>
             <div class="hero__main">
-                <img src="./img/speker.avif" width="260" height="340" alt="speker">
-                <a class="hero__main-btn" href="#">RO’YXATDAN O’TISH</a>
+                <img src="./img/speker.avif" fetchpriority="high" width="260" height="340" alt="speker">
+                <button class="hero__main-btn">RO’YXATDAN O’TISH</button>
             </div>
             <div class="hero__discount">
                 <img src="./img/arrow.svg" width="47" height="43" loading="lazy" alt="arrow">
@@ -31,7 +233,7 @@
             </div>
 
             <ul class="hero__info">
-                <h3 class="hero__info-title">2 kunlik Bepul Vebinarimiz siz ushun agar siz:</h3>
+                <h1 class="hero__info-title">2 kunlik Bepul Vebinarimiz siz ushun agar siz:</h1>
                 <li class="hero_nav">
                     <img src="./img/verify.svg" width="32" height="32" loading="lazy" alt="verify">
                     <p class="hero__list">Arab Tilini 0 dan o'rganmoqchi bo'lsangiz</p>
@@ -46,7 +248,7 @@
                 </li>
             </ul>
             <div class="hero__discount">
-                <a class="hero__main-btn" href="#">RO’YXATDAN O’TISH</a>
+                <button class="hero__main-btn">RO’YXATDAN O’TISH</button>
             </div>
 
             <div class="hero__discount">
@@ -54,11 +256,32 @@
                 <h3 class="hero__discount-title">BEPUL</h3>
             </div>
         </div>
+
+
+
+        <div class="modal">
+            <div class="modal__content">
+                <h2 class="modal__title">bepul onlayn darsga ro’yxatdan o’ting</h2>
+                <p class="modal__text">Ro’yxatdan o’tish uchun ma’lumotlaringizni to’ldiring va bonusga ega bo’ling</p>
+                <div class="modal__inp-boxs">
+                    <input class="modal__inp" type="text" placeholder="Ismingiz">
+                    <input class="modal__inp" type="text" placeholder="+998">
+                </div>
+                <div class="modal__box">
+                    <img class="modal__img" src="./img/gift.svg" alt="gift">
+                    <a class="modal__btn" href="./thankYou.html">
+                        kanalga qo’shilish
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
     </section>
 
 
 
-    <script src="./js/app.js" defer></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
